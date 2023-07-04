@@ -1,0 +1,98 @@
+.main-c__realtime-val {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.realtime-val__overview {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 40vw;
+  gap: 1rem;
+}
+
+.realtime-val__logo-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: rgba(var(--bd-pink-rgb), 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.realtime-val__logo-box i {
+  font-size: 1.7rem;
+  color: rgba(var(--bd-pink-rgb), 1);
+}
+
+.realtime-val__overview__title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.realtime-val__overview__des {
+  font-size: 1.2rem;
+}
+
+.realtime-val__overview__link-docs i {
+  padding-left: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.realtime-val__build {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.realtime-val__build__using,
+.realtime-val__build__customize {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.realtime-val__build__using {
+  flex: 1;
+  padding-right: 2rem;
+}
+.realtime-val__build__customize {
+  flex: 1;
+}
+
+.build__using__title,
+.build__customize__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .realtime-val__build {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .realtime-val__build__using {
+    padding-right: 0;
+  }
+
+  .realtime-val__overview {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 30.1875em) {
+  .realtime-val__overview {
+    margin-right: 0;
+  }
+}

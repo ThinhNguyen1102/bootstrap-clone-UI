@@ -1,0 +1,55 @@
+.link {
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+
+.link--white {
+  color: var(--bs-white-transparent-m);
+}
+
+.link--white:hover {
+  color: var(--bs-white-transparent-s);
+}
+
+.link--blue {
+  color: var(--bs-blue);
+}
+
+.link--black:hover,
+.link--blue:hover {
+  color: var(--bs-blue-transparent-m);
+}
+
+.link--black:hover:hover {
+  text-decoration: underline;
+}
+
+.link--underline {
+  text-decoration: underline;
+}
+
+.link--underline {
+  text-decoration: underline;
+}
+
+.link--size-s {
+  font-size: 1rem;
+}
+
+.link--size-m {
+  font-size: 1.4rem;
+}
+
+.link--size-l {
+  font-size: 1.4rem;
+}
+
+.link--box * {
+  pointer-events: none;
+  color: inherit;
+  transition: inherit;
+}
+
+.link--bold {
+  font-weight: 500;
+}

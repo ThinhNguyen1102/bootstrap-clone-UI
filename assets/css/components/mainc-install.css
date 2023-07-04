@@ -1,0 +1,151 @@
+.main-c__install {
+  text-align: start;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.install__method {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.method__npm {
+  flex: 1;
+  border-right: 1px solid var(--bs-gray-400);
+  padding-right: 2rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cdn__icon,
+.npm__icon {
+  font-size: 2rem;
+}
+
+.cdn__title,
+.npm__title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cdn__description,
+.npm__description {
+  padding-right: 4rem;
+  min-height: 150px;
+}
+
+.method__cdn {
+  flex: 1;
+  padding-left: 2rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.install__other-method {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.other-method__title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.other-method__description {
+  text-align: center;
+}
+
+.other-method__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 1rem;
+}
+
+.webpack__logo {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.parcel__logo {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.vite__logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.vite {
+  padding-top: 0.5rem;
+}
+
+.webpack,
+.parcel,
+.vite {
+  min-width: 4rem;
+  min-height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.other-method__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.other-method__box * {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .install__method {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .method__npm {
+    padding-right: 0;
+    border-right: none;
+  }
+  .method__cdn {
+    padding-left: 0;
+  }
+
+  .cdn__description,
+  .npm__description {
+    padding-right: 1rem;
+    min-height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 30.1875em) {
+}

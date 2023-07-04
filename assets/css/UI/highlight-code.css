@@ -1,0 +1,26 @@
+.highlight-code {
+  padding: 1.2rem 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: rgba(var(--bs-body-color-rgb), 0.075);
+  border-radius: calc(0.5rem - 1px);
+
+  font-size: 1rem;
+  word-spacing: 2px;
+  font-family: var(--bs-font-monospace);
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.highlight-code--center {
+  justify-content: center;
+}
+.highlight-code--start {
+  justify-content: flex-start;
+}
+.highlight-code--wrap {
+  white-space: pre-wrap;
+}

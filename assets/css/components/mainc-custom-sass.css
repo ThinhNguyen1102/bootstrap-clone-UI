@@ -1,0 +1,100 @@
+.main-c__cus-sass {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.cus-sass__overview {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 40vw;
+  gap: 1rem;
+}
+
+.cus-sass__logo-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cus-sass__logo-box i {
+  font-size: 1.7rem;
+  color: rgba(var(--bs-primary-rgb), 1);
+}
+
+.cus-sass__overview__title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.cus-sass__overview__des {
+  font-size: 1.2rem;
+}
+
+.cus-sass__overview__link-docs i {
+  padding-left: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.cus-sass__setup {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.cus-sass__setup__import,
+.cus-sass__setup__include {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.cus-sass__setup__import {
+  flex: 1;
+  padding-right: 2rem;
+}
+.cus-sass__setup__include {
+  flex: 1;
+}
+
+.setup__import__title,
+.setup__include__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .cus-sass__setup {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cus-sass__setup__import {
+    padding-right: 0;
+  }
+
+  .cus-sass__overview {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 30.1875em) {
+  .cus-sass__overview {
+    margin-right: 0;
+  }
+}

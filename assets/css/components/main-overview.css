@@ -1,0 +1,144 @@
+.main__overview {
+  --bd-pink-rgb: 214, 51, 132;
+  padding-top: 7rem;
+  background-image: linear-gradient(
+      180deg,
+      rgba(var(--bs-body-bg-rgb), 0.01),
+      rgba(var(--bs-body-bg-rgb), 1) 85%
+    ),
+    radial-gradient(
+      ellipse at top left,
+      rgba(var(--bs-primary-rgb), 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at top right,
+      rgba(var(--bd-accent-rgb), 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center right,
+      rgba(var(--bd-violet-rgb), 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center left,
+      rgba(var(--bd-pink-rgb), 0.5),
+      transparent 50%
+    );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 2rem;
+}
+
+.overview__new-version {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.version__name {
+  background-color: var(--bd-accent);
+  box-shadow: inset 0 -1px 1px rgba(var(--bs-body-color-rgb), 0.15),
+    0 0.25rem 1.5rem rgba(var(--bs-body-bg-rgb), 0.75);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.version__info {
+  color: var(--bs-secondary);
+}
+
+.overview__big-logo {
+  width: 12.5rem;
+  padding-top: 1.5rem;
+}
+
+.overview__main-title {
+  font-size: calc(1.6rem + 2.4vw);
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  max-width: 66.67%;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.overview__sub-info {
+  font-weight: 400;
+  color: var(--bs-secondary);
+  font-size: 1.6rem;
+}
+
+.overview__guild {
+  padding: 1.5rem 0;
+  width: 60%;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.guild__install {
+  flex: 6;
+  font-size: 1.2rem;
+}
+
+.guild__doc-btn {
+  flex: 4;
+  background-color: var(--bs-indigo-transparent-s);
+  border-radius: calc(0.5rem - 1px);
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.guild__doc-btn i {
+  color: white;
+  margin-right: 1rem;
+}
+
+.overview__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .overview__guild {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main__overview {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .overview__new-version {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .overview__sub-info {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 30.1875em) {
+  .overview__main-title {
+    max-width: 80%;
+  }
+  .overview__sub-info {
+    font-size: 0.8rem;
+  }
+  .main__overview {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
