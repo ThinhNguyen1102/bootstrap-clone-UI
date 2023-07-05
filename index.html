@@ -25,85 +25,115 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="./header.style.css" />
-    <link rel="stylesheet" href="./main.style.css" /> -->
     <link rel="stylesheet" href="./assets//css/index.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header flex--center">
       <i class="fa-brands fa-bootstrap header__logo"></i>
       <nav class="header__nav">
-        <div class="nav__left-content">
-          <a href="#" class="link link--white">Docs</a>
-          <a href="#" class="link link--white">Examples</a>
-          <a href="#" class="link link--white">Icons</a>
-          <a href="#" class="link link--white">Themes</a>
-          <a href="#" class="link link--white">Blog</a>
-        </div>
-        <div class="nav__right-content">
-          <a href="#" class="link link--white link--box"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="#" class="link link--white link--box"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <div class="nav__right-content__line"></div>
-          <a href="#" class="link link--white">v5.3</a>
-          <div class="nav__right-content__line"></div>
-          <a href="#" class="link link--white link--box"
-            ><i class="fa-solid fa-moon"></i
-          ></a>
-        </div>
-      </nav>
-      <input
-        class="header__check"
-        type="checkbox"
-        name="menu-toggle"
-        id="menu-toggle"
-      />
-      <nav class="header__mobile-nav">
-        <label class="mobile-nav__backdrop" for="menu-toggle"></label>
-        <div class="mobile-nav__menu">
-          <div class="mb-menu__header">
-            <div class="mb-menu__header__title">Bootstrap</div>
-            <label class="mb-menu__header__close" for="menu-toggle"
-              ><i class="fa-solid fa-xmark"></i
-            ></label>
-          </div>
-          <div class="mb-menu__item">
-            <a href="#" class="mb-menu__item__link link link--white">Docs</a>
-            <a href="#" class="mb-menu__item__link link link--white"
-              >Examples</a
-            >
-            <a href="#" class="mb-menu__item__link link link--white">Icons</a>
-            <a href="#" class="mb-menu__item__link link link--white">Themes</a>
-            <a href="#" class="mb-menu__item__link link link--white">Blog</a>
-          </div>
-          <div class="mb-menu__item">
-            <a href="#" class="mb-menu__item__link link link--white link--box">
-              <i class="fa-brands fa-github"></i>
-              <p class="mb-menu-i__link_title">GitHub</p>
-            </a>
-            <a href="#" class="mb-menu__item__link link link--white link--box">
-              <i class="fa-brands fa-twitter"></i>
-              <p class="mb-menu-i__link_title">Twitter</p>
-            </a>
-          </div>
-          <div class="mb-menu__item">
-            <a href="#" class="mb-menu__item__link link link--white link--box"
-              >Bootstrap v5.3<i class="fa-solid fa-caret-down"></i
+        <ul class="nav__content--left flex--center">
+          <li>
+            <a href="#" class="link link--white">Docs</a>
+          </li>
+          <li>
+            <a href="#" class="link link--white">Examples</a>
+          </li>
+          <li>
+            <a href="#" class="link link--white">Icons</a>
+          </li>
+          <li>
+            <a href="#" class="link link--white">Themes</a>
+          </li>
+          <li>
+            <a href="#" class="link link--white">Blog</a>
+          </li>
+        </ul>
+
+        <ul class="nav__content--right flex--center">
+          <li>
+            <a href="#" class="link link--white link--box"
+              ><i class="fa-brands fa-github"></i
             ></a>
-          </div>
-          <div class="mb-menu__item">
-            <a href="#" class="mb-menu__item__link link link--white link--box">
-              <i class="fa-solid fa-moon"></i>
-              <p class="mb-menu-i__link_title">
-                Toggle Theme&ensp;&nbsp;<i class="fa-solid fa-caret-down"></i>
-              </p>
-            </a>
-          </div>
-        </div>
+          </li>
+          <li>
+            <a href="#" class="link link--white link--box"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <div class="nav__right-content__line"></div>
+          <li><a href="#" class="link link--white">v5.3</a></li>
+          <div class="nav__right-content__line"></div>
+          <li>
+            <a href="#" class="link link--white link--box"
+              ><i class="fa-solid fa-moon"></i
+            ></a>
+          </li>
+        </ul>
       </nav>
+      <form action="#">
+        <input
+          class="header__check"
+          type="checkbox"
+          name="menu-toggle"
+          id="menu-toggle"
+        />
+
+        <nav class="header__mobile-nav">
+          <label class="mobile-nav__backdrop" for="menu-toggle"></label>
+          <div class="mobile-nav__menu">
+            <div class="menu-header">
+              <div class="menu-header__title">Bootstrap</div>
+              <label class="menu-header__close" for="menu-toggle"
+                ><i class="fa-solid fa-xmark"></i
+              ></label>
+            </div>
+            <ul class="menu-items">
+              <li class="menu-items__link-wrapper">
+                <a href="#" class="menu-items__link">Docs</a>
+              </li>
+              <li class="menu-items__link-wrapper">
+                <a href="#" class="menu-items__link">Examples</a>
+              </li>
+              <li class="menu-items__link-wrapper">
+                <a href="#" class="menu-items__link">Icons</a>
+              </li>
+              <li class="menu-items__link-wrapper">
+                <a href="#" class="menu-items__link">Themes</a>
+              </li>
+              <li class="menu-items__link-wrapper">
+                <a href="#" class="menu-items__link">Blog</a>
+              </li>
+            </ul>
+            <ul class="menu-items">
+              <li class="menu-items__link-wrapper">
+                <a href="#" class="menu-items__link link--box">
+                  <i class="fa-brands fa-github"></i>
+                  <p>GitHub</p>
+                </a>
+              </li>
+              <li class="menu-items__link-wrapper">
+                <a href="#" class="menu-items__link link--box">
+                  <i class="fa-brands fa-twitter"></i>
+                  <p>Twitter</p>
+                </a>
+              </li>
+            </ul>
+            <div class="menu-items">
+              <a href="#" class="menu-items__link link--box"
+                >Bootstrap v5.3<i class="fa-solid fa-caret-down"></i
+              ></a>
+            </div>
+            <div class="menu-items">
+              <a href="#" class="menu-items__link link--box">
+                <i class="fa-solid fa-moon"></i>
+                <p>
+                  Toggle Theme&ensp;&nbsp;<i class="fa-solid fa-caret-down"></i>
+                </p>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </form>
       <div class="header__menu-icon">
         <label for="menu-toggle" class="menu-icon__icon">
           <i class="fa-solid fa-ellipsis"></i>
@@ -114,12 +144,12 @@
     <main class="main">
       <div class="main__overview">
         <a href="#" class="overview__new-version">
-          <strong class="version__name">New in v5.3</strong>
-          <span class="version__info"
+          <strong class="new-version__name">New in v5.3</strong>
+          <span class="new-version__info"
             >Color mode support, expanded color palette, and more!
           </span>
         </a>
-        <div class="overview__big-logo">
+        <div class="overview__logo--big">
           <img
             src="./assets/images/bootstrap-main-logo.png"
             alt="bootstrap logo"
@@ -135,45 +165,57 @@
         </h1>
 
         <div class="overview__guild">
-          <pre class="guild__install highlight-code highlight-code--center">
+          <pre class="overview__install highlight-code highlight-code--center">
             <code>
               $ npm i bootstrap@5.3.0 
             </code>
           </pre>
-          <button class="guild__doc-btn">
+          <button class="overview__doc-btn">
             <i class="fa-solid fa-book-open"></i>Read the doc
           </button>
         </div>
 
-        <div class="overview__footer">
-          <p class="ov-footer__version">Currently <strong>v5.3.0</strong></p>
-          <a class="link link--blue link--underline" href="#">Download</a>
-          <a class="link link--blue link--underline" href="#">v4.6.x docs</a>
-          <a class="link link--blue link--underline" href="#">All releases</a>
+        <div class="overview__footer flex--center">
+          <p class="overview-footer__version">
+            Currently <strong>v5.3.0</strong>
+          </p>
+          <ul class="overview-footer__links flex--center">
+            <li>
+              <a class="link link--blue link--underline" href="#">Download</a>
+            </li>
+            <li>
+              <a class="link link--blue link--underline" href="#"
+                >v4.6.x docs</a
+              >
+            </li>
+            <li>
+              <a class="link link--blue link--underline" href="#"
+                >All releases</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
 
       <div class="main__content">
-        <section class="main-c__get-started">
-          <div class="main-c__logo">
+        <section class="content__get-started">
+          <div class="get-started__logo">
             <i class="fa-solid fa-code"></i>
           </div>
-          <h2 class="main-c__get-started__title">
-            Get started any way you want
-          </h2>
-          <p class="main-c__get-started__sub-info">
+          <h2 class="get-started__title">Get started any way you want</h2>
+          <p class="get-started__sub-info">
             Jump right into building with Bootstrap—use the CDN, install it via
             package manager, or download the source code.
           </p>
           <a
-            class="main-c__gt-link link link--blue link--underline link--size-m link--bold link--box"
+            class="get-started__link link link--blue link--underline link--size-m link--bold link--box"
             href="#"
           >
             Read installation docs<i class="fa-solid fa-arrow-right"></i>
           </a>
         </section>
 
-        <section class="main-c__install">
+        <section class="content__install">
           <div class="install__method">
             <div class="method__npm">
               <div class="npm__icon">
@@ -247,7 +289,7 @@
               with our official guides.
             </p>
             <div class="other-method__wrapper">
-              <div class="other-method__box">
+              <div class="other-method__logo-box">
                 <div class="webpack">
                   <img
                     src="./assets/images/webpack.png"
@@ -257,7 +299,7 @@
                 </div>
                 <p class="">webpack</p>
               </div>
-              <div class="other-method__box">
+              <div class="other-method__logo-box">
                 <div class="parcel">
                   <img
                     src="./assets/images/parcel.png"
@@ -267,7 +309,7 @@
                 </div>
                 <p class="">Parcel</p>
               </div>
-              <div class="other-method__box">
+              <div class="other-method__logo-box">
                 <div class="vite">
                   <img
                     src="./assets/images/vite.png"
@@ -281,15 +323,13 @@
           </div>
         </section>
 
-        <section class="main-c__cus-sass">
-          <div class="cus-sass__overview">
-            <div class="cus-sass__logo-box">
+        <section class="content__custom-sass">
+          <div class="custom-sass__overview">
+            <div class="custom-sass__logo-box">
               <i class="fa-brands fa-sass"></i>
             </div>
-            <h2 class="cus-sass__overview__title">
-              Customize everything with Sass
-            </h2>
-            <p class="cus-sass__overview__des">
+            <h2 class="custom-sass__title">Customize everything with Sass</h2>
+            <p class="custom-sass__des">
               Bootstrap utilizes Sass for a modular and customizable
               architecture. Import only the components you need, enable global
               options like gradients and shadows, and write your own CSS with
@@ -297,24 +337,24 @@
             </p>
             <a
               href="#"
-              class="cus-sass__overview__link-docs link link--blue link--underline link--size-m link--box"
+              class="custom-sass__link-docs link link--blue link--underline link--size-m link--box"
               >Learn more about CSS variables<i
                 class="fa-solid fa-arrow-right"
               ></i
             ></a>
           </div>
 
-          <div class="cus-sass__setup">
-            <div class="cus-sass__setup__import">
-              <h3 class="setup__import__title">
+          <div class="custom-sass__setup">
+            <div class="setup__import">
+              <h3 class="setup-import__title">
                 Include all of Bootstrap’s Sass
               </h3>
-              <p class="setup__import__des">
+              <p class="setup-import__des">
                 Import one stylesheet and you're off to the races with every
                 feature of our CSS.
               </p>
               <pre
-                class="setup__import__cmd highlight-code highlight-code--start highlight-code--wrap"
+                class="setup-import__cmd highlight-code highlight-code--start highlight-code--wrap"
               >
                 <code class="import__code">// Variable overrides first
 $primary: #900;
@@ -324,21 +364,21 @@ $prefix: "mo-";
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";</code>
               </pre>
-              <p class="setup__import__link">
+              <p class="setup-import__link">
                 Learn more about our
                 <a href="#" class="link link--blue link--underline"
                   >global Sass options</a
                 >.
               </p>
             </div>
-            <div class="cus-sass__setup__include">
-              <h3 class="setup__include__title">Include what you need</h3>
-              <p class="setup__include__des">
+            <div class="setup__include">
+              <h3 class="setup-include__title">Include what you need</h3>
+              <p class="setup-include__des">
                 The easiest way to customize Bootstrap—include only the CSS you
                 need.
               </p>
               <pre
-                class="setup__include__cmd highlight-code highlight-code--start highlight-code--wrap"
+                class="setup-include__cmd highlight-code highlight-code--start highlight-code--wrap"
               >
                 <code class="include__code">// Functions first
 @import "../node_modules/bootstrap/scss/functions";
@@ -363,7 +403,7 @@ $prefix: "mo-";
 @import "../node_modules/bootstrap/scss/helpers";
 @import "../node_modules/bootstrap/scss/utilities/api";</code>
               </pre>
-              <p class="setup__include__link">
+              <p class="setup-include__link">
                 Learn more about
                 <a href="#" class="link link--blue link--underline"
                   >using Bootstrap with Sass</a
@@ -373,15 +413,15 @@ $prefix: "mo-";
           </div>
         </section>
 
-        <section class="mainc__realtime-val">
+        <section class="content__realtime-val">
           <div class="realtime-val__overview">
             <div class="realtime-val__logo-box">
               <i class="fa-solid fa-code"></i>
             </div>
-            <h2 class="realtime-val__overview__title">
+            <h2 class="realtime-val__title">
               Build and extend in real-time with CSS variables
             </h2>
-            <p class="realtime-val__overview__des">
+            <p class="realtime-val__des">
               Bootstrap 5 is evolving with each release to better utilize CSS
               variables for global theme styles, individual components, and even
               utilities. We provide dozens of variables for colors, font styles,
@@ -391,7 +431,7 @@ $prefix: "mo-";
             </p>
             <a
               href="#"
-              class="realtime-val__overview__link-docs link link--blue link--underline link--size-m link--box"
+              class="realtime-val__link-docs link link--blue link--underline link--size-m link--box"
               >Learn more about CSS variables<i
                 class="fa-solid fa-arrow-right"
               ></i
@@ -399,15 +439,15 @@ $prefix: "mo-";
           </div>
 
           <div class="realtime-val__build">
-            <div class="realtime-val__build__using">
-              <h3 class="build__using__title">Using CSS variables</h3>
-              <p class="build__using__des">
+            <div class="build-using">
+              <h3 class="build-using__title">Using CSS variables</h3>
+              <p class="build-using__des">
                 Use any of our global :root variables to write new styles. CSS
                 variables use the var(--bs-variableName) syntax and can be
                 inherited by children elements.
               </p>
               <pre
-                class="build__using__cmd highlight-code highlight-code--start highlight-code--wrap"
+                class="build-using__cmd highlight-code highlight-code--start highlight-code--wrap"
               >
                 <code class="using__code">.component {
   color: var(--bs-gray-800);
@@ -421,17 +461,17 @@ $prefix: "mo-";
 }</code>
               </pre>
             </div>
-            <div class="realtime-val__build__customize">
-              <h3 class="build__customize__title">
+            <div class="build-customize">
+              <h3 class="build-customize__title">
                 Customizing via CSS variables
               </h3>
-              <p class="build__customize__des">
+              <p class="build-customize__des">
                 Override global, component, or utility class variables to
                 customize Bootstrap just how you like. No need to redeclare each
                 rule, just a new variable value.
               </p>
               <pre
-                class="build__customize__cmd highlight-code highlight-code--start highlight-code--wrap"
+                class="build-customize__cmd highlight-code highlight-code--start highlight-code--wrap"
               >
                 <code class="customize__code">body {
   --bs-body-font-family: var(--bs-font-monospace);
@@ -449,16 +489,16 @@ $prefix: "mo-";
           </div>
         </section>
 
-        <section class="main-c__personalize">
-          <div class="personalize__overview">
-            <div class="personalize__overview">
-              <div class="personalize__logo-box">
+        <section class="content__personalize">
+          <div class="personalize-overview__wrapper">
+            <div class="personalize-overview">
+              <div class="personalize-overview__logo-box">
                 <i class="fa-solid fa-code"></i>
               </div>
-              <h2 class="personalize__overview__title">
+              <h2 class="personalize-overview__title">
                 Personalize it with Bootstrap Icons
               </h2>
-              <p class="personalize__overview__des">
+              <p class="personalize-overview__des">
                 <a href="#" class="link link--blue link--underline"
                   >Bootstrap Icons</a
                 >
@@ -470,7 +510,7 @@ $prefix: "mo-";
               </p>
               <a
                 href="#"
-                class="personalize__overview__link-docs link link--blue link--underline link--size-m link--box"
+                class="personalize-overview__link-docs link link--blue link--underline link--size-m link--box"
                 >Get Bootstrap Icons<i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
@@ -497,40 +537,41 @@ $prefix: "mo-";
         <p class="lisensed__des">Currently v5.3.0.</p>
       </div>
       <div class="footer__links">
-        <div class="links-col">
-          <h4 class="links__title">Links</h4>
-          <a href="#" class="link--black">Home</a>
-          <a href="#" class="link--black">Docs</a>
-          <a href="#" class="link--black">Examples</a>
-          <a href="#" class="link--black">Icons</a>
-          <a href="#" class="link--black">Themes</a>
-          <a href="#" class="link--black">Blog</a>
-          <a href="#" class="link--black">Swag Store</a>
-        </div>
-        <div class="links-col">
-          <h4 class="links__title">Guides</h4>
-          <a href="#" class="link--black">Getting started</a>
-          <a href="#" class="link--black">Starter template</a>
-          <a href="#" class="link--black">Webpack</a>
-          <a href="#" class="link--black">Parcel</a>
-          <a href="#" class="link--black">Vite</a>
-        </div>
-        <div class="links-col">
-          <h4 class="links__title">Projects</h4>
-          <a href="#" class="link--black">Bootstrap 5</a>
-          <a href="#" class="link--black">Bootstrap 4</a>
-          <a href="#" class="link--black">Icons</a>
-          <a href="#" class="link--black">RFS</a>
-          <a href="#" class="link--black">Examples repo</a>
-        </div>
-        <div class="links-col">
-          <h4 class="links__title">Community</h4>
-          <a href="#" class="link--black">Issues</a>
-          <a href="#" class="link--black">Discussions</a>
-          <a href="#" class="link--black">Corporate sponsors</a>
-          <a href="#" class="link--black">Open Collective</a>
-          <a href="#" class="link--black">Stack Overflow</a>
-        </div>
+        <ul class="links-col">
+          <li><h4 class="links__title">Links</h4></li>
+          <li><a href="#" class="link--black">Home</a></li>
+          <li><a href="#" class="link--black">Docs</a></li>
+          <li><a href="#" class="link--black">Examples</a></li>
+          <li><a href="#" class="link--black">Icons</a></li>
+          <li><a href="#" class="link--black">Themes</a></li>
+          <li><a href="#" class="link--black">Blog</a></li>
+          <li><a href="#" class="link--black">Swag Store</a></li>
+        </ul>
+        <ul class="links-col">
+          <li><h4 class="links__title">Guides</h4></li>
+          <li><a href="#" class="link--black">Getting started</a></li>
+          <li><a href="#" class="link--black">Starter template</a></li>
+          <li><a href="#" class="link--black">Webpack</a></li>
+          <li><a href="#" class="link--black">Parcel</a></li>
+          <li><a href="#" class="link--black">Themes</a></li>
+          <li><a href="#" class="link--black">Vite</a></li>
+        </ul>
+        <ul class="links-col">
+          <li><h4 class="links__title">Projects</h4></li>
+          <li><a href="#" class="link--black">Bootstrap 5</a></li>
+          <li><a href="#" class="link--black">Bootstrap 4</a></li>
+          <li><a href="#" class="link--black">Icons</a></li>
+          <li><a href="#" class="link--black">RFS</a></li>
+          <li><a href="#" class="link--black">Examples repo</a></li>
+        </ul>
+        <ul class="links-col">
+          <li><h4 class="links__title">Community</h4></li>
+          <li><a href="#" class="link--black">Issues</a></li>
+          <li><a href="#" class="link--black">Discussions</a></li>
+          <li><a href="#" class="link--black">Corporate sponsors</a></li>
+          <li><a href="#" class="link--black">Open Collective</a></li>
+          <li><a href="#" class="link--black">Stack Overflow</a></li>
+        </ul>
       </div>
     </footer>
   </body>

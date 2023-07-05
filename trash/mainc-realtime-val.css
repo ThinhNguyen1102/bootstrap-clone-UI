@@ -1,13 +1,12 @@
-.main-c__cus-sass {
+.content__realtime-val {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   margin-top: 4rem;
-  margin-bottom: 4rem;
 }
 
-.cus-sass__overview {
+.realtime-val__overview {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -16,37 +15,37 @@
   gap: 1rem;
 }
 
-.cus-sass__logo-box {
+.realtime-val__logo-box {
   width: 4rem;
   height: 4rem;
   border-radius: 1rem;
-  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  background-color: rgba(var(--bd-pink-rgb), 0.1);
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cus-sass__logo-box i {
+.realtime-val__logo-box i {
   font-size: 1.7rem;
-  color: rgba(var(--bs-primary-rgb), 1);
+  color: rgba(var(--bd-pink-rgb), 1);
 }
 
-.cus-sass__overview__title {
+.realtime-val__title {
   font-size: 3rem;
   font-weight: 500;
 }
 
-.cus-sass__overview__des {
+.realtime-val__des {
   font-size: 1.2rem;
 }
 
-.cus-sass__overview__link-docs i {
+.realtime-val__link-docs i {
   padding-left: 0.8rem;
   font-size: 1.2rem;
 }
 
-.cus-sass__setup {
+.realtime-val__build {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -54,47 +53,46 @@
   width: 100%;
 }
 
-.cus-sass__setup__import,
-.cus-sass__setup__include {
+.build-using,
+.build-customize {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 1rem;
-  width: 100%;
 }
 
-.cus-sass__setup__import {
+.build-using {
   flex: 1;
   padding-right: 2rem;
 }
-.cus-sass__setup__include {
+.build-customize {
   flex: 1;
 }
 
-.setup__import__title,
-.setup__include__title {
+.build-using__title,
+.build-customize__title {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 @media only screen and (max-width: 63.9375em) {
-  .cus-sass__setup {
+  .realtime-val__build {
     flex-direction: column;
     gap: 2rem;
   }
 
-  .cus-sass__setup__import {
+  .build-using {
     padding-right: 0;
   }
 
-  .cus-sass__overview {
+  .realtime-val__overview {
     margin-right: 0;
   }
 }
 
 @media only screen and (max-width: 30.1875em) {
-  .cus-sass__overview {
+  .realtime-val__overview {
     margin-right: 0;
   }
 }

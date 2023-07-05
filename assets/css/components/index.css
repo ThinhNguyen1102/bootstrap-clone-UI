@@ -1,9 +1,5 @@
 @import url("./header.css");
 @import url("./mobile-header.css");
+@import url("./main-content.css");
 @import url("./main-overview.css");
-@import url("./mainc-getstarted.css");
-@import url("./mainc-install.css");
-@import url("./mainc-custom-sass.css");
-@import url("./mainc-realtime-val.css");
-@import url("./mainc-personalize.css");
 @import url("./footer.css");

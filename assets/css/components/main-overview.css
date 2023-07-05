@@ -1,6 +1,5 @@
 .main__overview {
   --bd-pink-rgb: 214, 51, 132;
-  padding-top: 7rem;
   background-image: linear-gradient(
       180deg,
       rgba(var(--bs-body-bg-rgb), 0.01),
@@ -33,9 +32,8 @@
   flex-direction: column;
 
   text-align: center;
-  padding-left: 8rem;
-  padding-right: 8rem;
-  padding-bottom: 2rem;
+  padding: 2rem 8rem;
+  margin-top: 4rem;
 }
 
 .overview__new-version {
@@ -45,18 +43,18 @@
   gap: 1rem;
 }
 
-.version__name {
+.new-version__name {
   background-color: var(--bd-accent);
   box-shadow: inset 0 -1px 1px rgba(var(--bs-body-color-rgb), 0.15),
     0 0.25rem 1.5rem rgba(var(--bs-body-bg-rgb), 0.75);
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
 }
-.version__info {
+.new-version__info {
   color: var(--bs-secondary);
 }
 
-.overview__big-logo {
+.overview__logo--big {
   width: 12.5rem;
   padding-top: 1.5rem;
 }
@@ -75,6 +73,7 @@
   font-weight: 400;
   color: var(--bs-secondary);
   font-size: 1.6rem;
+  max-width: 60vw;
 }
 
 .overview__guild {
@@ -85,12 +84,12 @@
   gap: 1rem;
 }
 
-.guild__install {
+.overview__install {
   flex: 6;
   font-size: 1.2rem;
 }
 
-.guild__doc-btn {
+.overview__doc-btn {
   flex: 4;
   background-color: var(--bs-indigo-transparent-s);
   border-radius: calc(0.5rem - 1px);
@@ -99,17 +98,24 @@
   padding: 1rem;
 }
 
-.guild__doc-btn i {
+.overview__doc-btn i {
   color: white;
   margin-right: 1rem;
 }
 
 .overview__footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.overview-footer__links {
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 81.25em) {
+  .overview__sub-info {
+    max-width: fit-content;
+  }
 }
 
 @media only screen and (max-width: 63.9375em) {

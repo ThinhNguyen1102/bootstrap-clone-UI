@@ -1,0 +1,24 @@
+.logo {
+  color: white;
+  transition: all 0.25s linear;
+}
+
+.logo--size-s {
+  font-size: 2.25rem;
+}
+
+.logo--size-l {
+  width: 12.5rem;
+}
+
+.logo--white {
+  color: white;
+}
+
+.logo--primary {
+  color: var(--bs-indigo);
+}
+
+.logo--black {
+  color: var(--bs-indigo);
+}
